@@ -88,3 +88,8 @@ crous = Salmon()
 harry = Halibut()
 
 # Explicit is better than implicit. 清楚比含混好，写了比没写好。好的代码风格。
+
+# 注：自己对类的理解。首先，你要定义一下‘动物’，即class Animal(object)，此处的object可以不写，但好的代码风格会写
+# 注2：其次，你要定义‘猫’，猫是动物的一种，因此class Cat(Animal),这用了‘继承’的方法，Cat可以有自己的函数，同时继承了Animal的函数，即‘属性’（attribute）
+# 注3：再次，你家猫叫‘cendy'，它是猫的一种，即Cat（’cendy‘），这里不是继承，而是is-a，即cendy是猫，继承了Cat的函数，记得前方没有class
+# 注4：若你令cendy = Cat('cendy')，就可以调用其属性了，比如cendy.hello. cendy自己不是“类”，而是一个实例‘instance‘
